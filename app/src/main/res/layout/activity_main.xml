@@ -49,9 +49,10 @@
             android:id="@+id/ivcokeicon"
             android:layout_width="132dp"
             android:layout_height="131dp"
+
             android:translationX="20dp"
             android:translationY="25dp"
-            tools:srcCompat="@drawable/Coke_Zero_330mL" />
+            app:srcCompat="@drawable/coke" />
 
         <TextView
             android:id="@+id/tvtxtcoke"
@@ -78,7 +79,8 @@
             android:layout_height="132dp"
             android:translationX="20dp"
             android:translationY="50dp"
-            tools:srcCompat="@drawable/icedtea" />
+            android:contentDescription="@string/ivicedteaicon"
+            app:srcCompat="@drawable/icedtea" />
 
         <TextView
             android:id="@+id/tvtxticedtea"
@@ -103,7 +105,8 @@
             android:layout_height="133dp"
             android:translationX="180dp"
             android:translationY="-180dp"
-            tools:srcCompat="@drawable/royal" />
+            android:contentDescription="@string/ivroyalicon"
+            app:srcCompat="@drawable/royal" />
 
         <TextView
             android:id="@+id/tvtxtroyal"
@@ -120,7 +123,8 @@
             android:layout_height="131dp"
             android:translationX="200dp"
             android:translationY="-620dp"
-            tools:srcCompat="@drawable/sprite" />
+            android:contentDescription="@string/ivspriteicon"
+            app:srcCompat="@drawable/sprite" />
 
         <Button
             android:id="@+id/btnsprite"
