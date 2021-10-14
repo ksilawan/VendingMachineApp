@@ -1,18 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvuseramount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="3"
+            android:hint="@string/tvuseramount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btninsertmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btninsertmoney"
+            android:translationX="5dp"
+            android:translationY="10dp"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/ivcokeicon"
+            android:layout_width="132dp"
+            android:layout_height="131dp"
+            android:translationX="20dp"
+            android:translationY="25dp"
+            tools:srcCompat="@drawable/Coke_Zero_330mL" />
+
+        <TextView
+            android:id="@+id/tvtxtcoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coke \n P50"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:translationX="55dp"
+            android:translationY="25dp" />
+
+        <TextView
+            android:id="@+id/tvtxtsprite"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Sprite \n P60"
+            android:textSize="18sp"
+            android:translationX="250dp"
+            android:translationY="-20dp" />
+
+        <ImageView
+            android:id="@+id/ivicedteaicon"
+            android:layout_width="131dp"
+            android:layout_height="132dp"
+            android:translationX="20dp"
+            android:translationY="50dp"
+            tools:srcCompat="@drawable/icedtea" />
+
+        <TextView
+            android:id="@+id/tvtxticedtea"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="Iced Tea \n   P80"
+            android:textSize="18sp"
+            android:translationX="45dp"
+            android:translationY="55dp" />
+
+        <Button
+            android:id="@+id/btnicedtea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUY"
+            android:translationX="42dp"
+            android:translationY="45dp" />
+
+        <ImageView
+            android:id="@+id/ivroyalicon"
+            android:layout_width="179dp"
+            android:layout_height="133dp"
+            android:translationX="180dp"
+            android:translationY="-180dp"
+            tools:srcCompat="@drawable/royal" />
+
+        <TextView
+            android:id="@+id/tvtxtroyal"
+            android:layout_width="176dp"
+            android:layout_height="61dp"
+            android:text="Royal \nP70"
+            android:textSize="18sp"
+            android:translationX="250dp"
+            android:translationY="-180dp" />
+
+        <ImageView
+            android:id="@+id/ivspriteicon"
+            android:layout_width="132dp"
+            android:layout_height="131dp"
+            android:translationX="200dp"
+            android:translationY="-620dp"
+            tools:srcCompat="@drawable/sprite" />
+
+        <Button
+            android:id="@+id/btnsprite"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="BUY"
+            android:translationX="240dp"
+            android:translationY="-570dp" />
+
+        <Button
+            android:id="@+id/btncoke"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="BUY"
+            android:translationX="40dp"
+            android:translationY="-620dp" />
+
+        <TextView
+            android:id="@+id/tvtxtdisplaymoney"
+            android:layout_width="205dp"
+            android:layout_height="39dp"
+            android:text="@string/tvtxtdisplaymoney"
+            android:textSize="18sp"
+            android:translationX="160dp"
+            android:translationY="-910dp" />
+
+        <Button
+            android:id="@+id/btnroyal"
+            android:layout_width="83dp"
+            android:layout_height="48dp"
+            android:text="BUY"
+            android:translationX="240dp"
+            android:translationY="-470dp" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

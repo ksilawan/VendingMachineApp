@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Vending Machine</string>
+    <string name="tvuseramount">Enter Amount</string>
+    <string name="btninsertmoney">Insert Money</string>
+    <string name="ivcokeicon">CokePic</string>
+    <string name="tvtxtcoke">Coke</string>
+    <string name="ivspriteicon">SpritePic</string>
+    <string name="tvtxtsprite">Sprite</string>
+    <string name="iviceteaicon">IcedTeaPic</string>
+    <string name="tvtxticedtea">IcedTea</string>
+    <string name="ivroyalicon">RoyalPic</string>
+    <string name="tvtxtroyal">Royal</string>
+    <string name="btncoke">BUY</string>
+    <string name="tvtxtdisplaymoney">Current Money:</string>
+    <string name="btnsprite">BUY</string>
+    <string name="btnicedtea">BUY</string>
+    <string name="btnroyal">BUY</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
