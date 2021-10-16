@@ -66,7 +66,7 @@
 
         <TextView
             android:id="@+id/tvtxtsprite"
-            android:layout_width="wrap_content"
+            android:layout_width="98dp"
             android:layout_height="wrap_content"
             android:text="Sprite \n P60"
             android:textSize="18sp"
@@ -84,7 +84,7 @@
 
         <TextView
             android:id="@+id/tvtxticedtea"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="48dp"
             android:text="Iced Tea \n   P80"
             android:textSize="18sp"
@@ -95,23 +95,22 @@
             android:id="@+id/btnicedtea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#673AB7"
             android:text="BUY"
             android:translationX="42dp"
             android:translationY="45dp" />
 
         <ImageView
             android:id="@+id/ivroyalicon"
-            android:layout_width="163dp"
+            android:layout_width="179dp"
             android:layout_height="133dp"
-            android:contentDescription="@string/ivroyalicon"
             android:translationX="180dp"
             android:translationY="-180dp"
+            android:contentDescription="@string/ivroyalicon"
             app:srcCompat="@drawable/royal" />
 
         <TextView
             android:id="@+id/tvtxtroyal"
-            android:layout_width="wrap_content"
+            android:layout_width="176dp"
             android:layout_height="61dp"
             android:text="Royal \nP70"
             android:textSize="18sp"
@@ -131,7 +130,6 @@
             android:id="@+id/btnsprite"
             android:layout_width="wrap_content"
             android:layout_height="52dp"
-            android:backgroundTint="#673AB7"
             android:text="BUY"
             android:translationX="240dp"
             android:translationY="-570dp" />
@@ -140,7 +138,6 @@
             android:id="@+id/btncoke"
             android:layout_width="wrap_content"
             android:layout_height="51dp"
-            android:backgroundTint="#673AB7"
             android:text="BUY"
             android:translationX="40dp"
             android:translationY="-620dp" />
@@ -158,7 +155,6 @@
             android:id="@+id/btnroyal"
             android:layout_width="83dp"
             android:layout_height="48dp"
-            android:backgroundTint="#673AB7"
             android:text="BUY"
             android:translationX="240dp"
             android:translationY="-470dp" />
