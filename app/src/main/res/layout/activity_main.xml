@@ -30,9 +30,11 @@
             android:hint="@string/tvuseramount">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edttxtuseramounted"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:imeOptions="actionNext" />
+                android:imeOptions="actionNext"
+                android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

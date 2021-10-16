@@ -11,7 +11,7 @@
     <string name="ivroyalicon">RoyalPic</string>
     <string name="tvtxtroyal">Royal</string>
     <string name="btncoke">BUY</string>
-    <string name="tvtxtdisplaymoney">Current Money:</string>
+    <string name="tvtxtdisplaymoney">Current Money: 0</string>
     <string name="btnsprite">BUY</string>
     <string name="btnicedtea">BUY</string>
     <string name="btnroyal">BUY</string>
