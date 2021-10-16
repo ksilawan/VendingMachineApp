@@ -35,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
         Button buyIcedTea = (Button) findViewById(R.id.btnicedtea);
         Button buyRoyal = (Button) findViewById(R.id.btnroyal);
 
-        //buyCoke.setEnabled(false);
+        buyCoke.setEnabled(false);
+        buyIcedTea.setEnabled(false);
+        buyRoyal.setEnabled(false);
+        buySprite.setEnabled(false);
 
         buyCoke.setOnClickListener(new View.OnClickListener() {
             @Override
