@@ -15,6 +15,8 @@
     <string name="btnsprite">BUY</string>
     <string name="btnicedtea">BUY</string>
     <string name="btnroyal">BUY</string>
+    <string name="MyNotification">My Notification</string>
+    <string name="NotificationChannel">Notification Channel</string>
 
 
 
