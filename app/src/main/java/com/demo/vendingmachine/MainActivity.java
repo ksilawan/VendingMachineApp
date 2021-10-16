@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Context context = getApplicationContext();
 
-        EditText enteredAmount = (EditText) findViewById(R.id.tvuseramount);
+        //TextInputEditText enteredAmount = (TextInputEditText) findViewById(R.id.tvuseramount);
 
         Button insertMoney = (Button) findViewById(R.id.btninsertmoney);
         Button buyCoke = (Button) findViewById(R.id.btncoke);
