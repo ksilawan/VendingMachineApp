@@ -23,6 +23,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+    float currentAmount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         buySprite.setEnabled(false);
 
         insertMoney.setOnClickListener(new View.OnClickListener() {
-            float currentAmount = 0;
+            //float currentAmount = 0;
             @Override
             public void onClick(View view) {
                 float amount = Float.parseFloat(enteredAmount.getText().toString());
@@ -82,28 +83,127 @@ public class MainActivity extends AppCompatActivity {
         buyCoke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Enjoy your coke", Toast.LENGTH_SHORT).show();
+                if(currentAmount >= 50){
+                    float updatedAmount = currentAmount -= 50;
+                    currentAmountEntered.setText("Current Money: " + updatedAmount);
+
+                    if(updatedAmount < 50){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                        buyCoke.setEnabled(false);
+                    }
+                    else if(updatedAmount < 60){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                    }
+                    else if(updatedAmount < 70){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                    }
+                    else if(updatedAmount < 80){
+                        buyIcedTea.setEnabled(false);
+                    }
+
+                }
+                else{
+                    Toast.makeText(context, "Current Money not enough!", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
         buySprite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(currentAmount >= 60){
+                    float updatedAmount = currentAmount -= 60;
+                    currentAmountEntered.setText("Current Money: " + updatedAmount);
+                    if(updatedAmount < 50){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                        buyCoke.setEnabled(false);
+                    }
+                    else if(updatedAmount < 60){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                    }
+                    else if(updatedAmount < 70){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                    }
+                    else if(updatedAmount < 80){
+                        buyIcedTea.setEnabled(false);
+                    }
+                }
+                else{
+                    Toast.makeText(context, "Current Money not enough!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         buyIcedTea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(currentAmount >= 80){
+                    float updatedAmount = currentAmount -= 80;
+                    currentAmountEntered.setText("Current Money: " + updatedAmount);
+                    if(updatedAmount < 50){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                        buyCoke.setEnabled(false);
+                    }
+                    else if(updatedAmount < 60){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                    }
+                    else if(updatedAmount < 70){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                    }
+                    else if(updatedAmount < 80){
+                        buyIcedTea.setEnabled(false);
+                    }
+                }
+                else{
+                    Toast.makeText(context, "Current Money not enough!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         buyRoyal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(currentAmount >= 70){
+                    float updatedAmount = currentAmount -= 70;
+                    currentAmountEntered.setText("Current Money: " + updatedAmount);
+                    if(updatedAmount < 50){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                        buyCoke.setEnabled(false);
+                    }
+                    else if(updatedAmount < 60){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                        buySprite.setEnabled(false);
+                    }
+                    else if(updatedAmount < 70){
+                        buyIcedTea.setEnabled(false);
+                        buyRoyal.setEnabled(false);
+                    }
+                    else if(updatedAmount < 80){
+                        buyIcedTea.setEnabled(false);
+                    }
+                }
+                else{
+                    Toast.makeText(context, "Current Money not enough!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
